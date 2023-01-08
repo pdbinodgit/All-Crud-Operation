@@ -2,6 +2,7 @@ package com.SpringAllCrudOperation.user.controller;
 
 import com.SpringAllCrudOperation.user.model.User;
 import com.SpringAllCrudOperation.user.service.UserService;
+import com.SpringAllCrudOperation.vehicles.model.Vehicles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +16,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+
     @PostMapping("/add")
     public User saveValue(@RequestBody User user){
+
         return userService.saveValues(user);
     }
 
