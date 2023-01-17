@@ -16,6 +16,7 @@ public class SpringSecurityApplication {
 		SpringApplication.run(SpringSecurityApplication.class, args);
 
 		System.out.println("git branch check");
+		System.out.println("*********************");
 //		int i,size;
 //		Scanner sc=new Scanner(System.in);
 //		System.out.println("Enter size of array");
